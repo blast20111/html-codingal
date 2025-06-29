@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>multiply every array with100</p> 
+   <p id="result"></p>
+   <script>
+    var numbers=[1234567890,9876543210,13579,24680,1029384756]
+   
+   function mw100(numbers) {
+   return numbers*100
+
+   }
+   var nombers=numbers.map(mw100);
+    document.getElementById("result").innerHTML=nombers
+   </script>
+</body>
+</html>
