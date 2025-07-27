@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div id="myclockdisplay"  onload="showtime()" ></div>
+ <script>
+    function showtime(){
+        var d=getDate();
+        var m=getMonth();
+         var da=getDay();
+          var y=getFullYear();
+          var session = "AM";
+         
+    var time =d++m+da+y+s+" " "+session;
+    document.getElementById("myclockdisplay").innerText= time;
+    setTimeout(showtime,1000)
+}
+showtime();
+ </script>
+</body>
+</html>
