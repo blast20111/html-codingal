@@ -30,6 +30,83 @@
             background-color: black;
             color:blue
         }
+        /* Reset */
+body, html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Common parallax style */
+.pimg1, .pimg2, .pimg3 {
+  position: relative;
+  opacity: 0.70;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Images */
+.pimg1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7iNVT-etbQOvpMfeoPsgTck-Pe4vplGnevg&s");
+}
+.pimg2 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdf9z5RmT-zq6sofIWJPVteT85wKFK1Btlag&s");
+}
+.pimg3 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwooM7ymznJ2YmdCl26lBJMuF33B1Art8XOQ&s");
+}
+
+/* Text on image */
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+  color: #f1f1f1;
+}
+
+/* Dark section */
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.section-dark h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.footer{
+          position:fixed;
+          left:0;
+          bottom:0;
+          width:100%;
+          background-color:black;
+          color:white;
+          text-align:center;
+           padding: 10px;      /* add some space */
+  z-index: 1000; 
+        } 
     </style>
 </head>
 <body>
@@ -40,31 +117,64 @@
         <a href="players.html" >players</a>
         <a href="rules.html" >rules</a>
     </div>
-    <p>this is players page</p>  
-    <div id="pimg1">
-        <div class="ptext">
-            <span class="border trans"style="font-size:40px;">welcome to apex volleyball website</span>
-        </div>
+       <!-- Parallax Image 1 -->
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        what is volleyball?
+      </span>
     </div>
-     <section class="section section-dark">
-<h2>what is volleyball?</h2>
-<p> Volleyball is a team sport where two teams, usually of six players each, are separated by a net. The main objective is to ground the ball on the opponent’s court and prevent it from touching your own</p>
-<section class="section section-dark">
-<h2>history of volleyball</h2>
-<p> 🎈Invented in 1895 by William G. Morgan in Massachusetts, USA</p>
+  </div>
+
+  <!-- Section 1 -->
+  <section class="section-dark">
+    <h2>what is volleyball?</h2>
+    <p>
+      Volleyball is a team sport where two teams, usually of six players each, are separated by a net. The main objective is to ground the ball on the opponent’s court and prevent it from touching your own
+    </p>
+  </section>
+
+  <!-- Parallax Image 2 -->
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        history of volleyball
+      </span>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <section class="section-dark">
+    <h2>History of volleyball</h2>
+    <p> 🎈Invented in 1895 by William G. Morgan in Massachusetts, USA</p>
  <p>  🎈Originally called “Mintonette”, it was designed as a less intense alternative to basketball.</p>
   <p>  🎈The name “volleyball” was adopted after people noticed the game involved volleying the ball back and forth.</p>
    <p> 🎈Became an Olympic sport in 1964 (Tokyo Olympics).</p>
-<section class="section section-dark">
-<h2>🌍 Popular Forms</h2>
+  </section>
 
- <p>  🎈Indoor Volleyball – standard 6-player version.</p>
+  <!-- Parallax Image 3 -->
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border">
+       🌍 Popular Forms
+      </span>
+    </div>
+  </div>
+<section class="section-dark">
+    
+    <p>  🎈Indoor Volleyball – standard 6-player version.</p>
   <p>  🎈Indoor Volleyball – standard 6-player version.</p>
    <p> 🎈Sitting Volleyball – Paralympic version for athletes with disabilities.</p>
+  </section>
+
    
- <div class="footer">
+
+
+    
+
+<div class="footer">
         <p>@copyrights reserved by velocity_editz</p>
     </div>
-
+   
 </body>
 </html>
